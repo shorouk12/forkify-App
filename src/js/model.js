@@ -141,7 +141,7 @@ export const uploadRecipe = async function(newRecipe){
         return {quantity: quantity? +quantity: null,unit,description};
     });
 
-    recipe = { 
+    const recipe = { 
         title: newRecipe.title,
         source_url: newRecipe.sourceUrl,
         image_url: newRecipe.image,
